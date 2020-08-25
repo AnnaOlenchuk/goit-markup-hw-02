@@ -3,13 +3,14 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --white-color: #ffffff;
-  --primary-background-color: #E5E5E5;
+  --black-color: #000000;
   --secondary-background-color: #F5F4FA;
+  --footer-color: #2F303A;
 }
 
 .page {
   color: var(--primary-text-color);
-  background-color: #ffffff;
+  background-color: var(--white-color);
 
   font-family: Roboto, sans-serif;
 }
@@ -23,6 +24,40 @@
 /* section 1 background #E5E5E5; */
 /* section 2 background #F5F4FA; */
 /* footer background */
+
+.link {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  text-decoration: none;
+}
+
+.primary-logo {
+  color: var(--accent-color);
+}
+
+.secondary.logo {
+  color: var(--black-color);
+}
+
+.logo.link:visited {
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+.footer .logo.link:visited {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
 
 /* Header */
 .site-nav .link {
@@ -54,9 +89,33 @@
   color: var(--accent-color);
 }
 
+/* Footer */
+.footer {
+  background-color: var(--footer-color);
+}
+
+.address-item {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+
+}
+
+.address-item.link {
+  font-style: normal;
+  color: var(--primary-text-color);
+} 
+
+.address-item.link:hover,
+.address-item.link:focus {
+  color: var(--accent-color);
+}
+
 /* Hero */
 .hero {
-  background-color: #2F303A
+  background-color: var(--footer-color)
 }
 
 /* АХТУНГ! Разобраться, почему поломался шрифт */
@@ -113,6 +172,10 @@
   letter-spacing: 0.03em;
 }
 
+.section.team {
+  background-color: var(--secondary-background-color);
+}
+
 /* Button */
 .button {
   color: var(--white-color);
@@ -151,10 +214,8 @@
   letter-spacing: 0.03em;
 }
 
-/* Filter items
-ПОЧЕМУ НЕ СБРАСЫВАЮТСЯ СТИЛИ КНОПКИ?(((
-почему не получается задать font-weight?*/
-.filter-item button{
+/* Filter items*/
+.filter-item {
   background-color: var(--secondary-background-color);
   color: var(--title-text-color);
   border-style: none;

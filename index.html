@@ -6,6 +6,7 @@
   <title>Web Studio</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css">
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
@@ -13,8 +14,9 @@
   <header class="page-header">
     <nav>
       <!-- Company logo -->
-      <a href="/">
-        <img src="./images/logo.svg" alt="logo" />
+      <a href="/" class="logo link">
+        <!-- <img src="./images/logo.svg" alt="logo" /> -->
+        <span class="primary-logo">Web</span><span class="secondary-logo">Studio</span>
       </a>
       <!-- Menu items -->
       <ul class="site-nav list">
@@ -79,7 +81,7 @@
     </section>
 
     <!-- Services -->
-    <section class="section">
+    <section class="section services">
       <h2 class="section-title">Чем мы занимаемся</h2>
       <ul class="list">
         <li><img src="./images/img1.png" alt="Услуга 1" width="370" /></li>
@@ -119,14 +121,16 @@
     </section>
   </main>
 
-  <footer>
-    <a href="/">
-      <img src="./images/logo.svg" alt="logo" />
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="/" class="logo link">
+      <!-- <img src="./images/logo.svg" alt="logo" /> -->
+      <span class="primary-logo">Web</span><span class="secondary-logo">Studio</span>
     </a>
-    <address>
-      <p>г. Киев, пр-т Леси Украинки, 26</p>
-      <p><a href="mailto:info@devstudio.com">info@devstudio.com</a></p>
-      <p><a href="tel:+380961111111">+38 096 111 11 11</a></p>
+    <address class="address">
+      <p class="address-item">г. Киев, пр-т Леси Украинки, 26</p>
+      <p><a href="mailto:info@devstudio.com" class="address-item link">info@devstudio.com</a></p>
+      <p><a href="tel:+380961111111" class="address-item link">+38 096 111 11 11</a></p>
     </address>
   </footer>
 </body>
