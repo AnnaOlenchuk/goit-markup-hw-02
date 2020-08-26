@@ -13,9 +13,20 @@
   background-color: var(--white-color);
 
   font-family: Roboto, sans-serif;
+
+  margin: 0;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+
+  /* outline: 2px solid tomato; */
+}
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 /* primary text color #757575;*/
@@ -29,7 +40,7 @@
   text-decoration: none;
 }
 
-.logo {
+/* .logo {
   font-family: Raleway;
   font-style: normal;
   font-weight: 700;
@@ -38,9 +49,11 @@
   letter-spacing: 0.03em;
 
   text-decoration: none;
-}
 
-.primary-logo {
+  color: var(--accent-color);
+} */
+
+/* .primary-logo {
   color: var(--accent-color);
 }
 
@@ -51,15 +64,19 @@
 .logo.link:visited {
   text-decoration: none;
   color: var(--black-color);
-}
+} */
 
-.footer .logo.link:visited {
+/* .footer .logo.link:visited {
   text-decoration: none;
   color: var(--white-color);
-}
+} */
 
 
-/* Header */
+/* Header
+.page-header {
+  outline: 1px solid tomato;
+} */
+
 .site-nav .link {
   color: var(--title-text-color);
 
@@ -115,11 +132,18 @@
 
 /* Hero */
 .hero {
-  background-color: var(--footer-color)
+  text-align: center;
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  background-color: var(--footer-color);
 }
 
 /* АХТУНГ! Разобраться, почему поломался шрифт */
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30;
   color: var(--white-color);
 
   font-family: Roboto, sans-serif;
@@ -127,16 +151,26 @@
   font-weight: 700;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 /* Section */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.no-padding {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
+
 .section-title {
   /* h2 */
   color: var(--title-text-color);
-  
+  margin-top: 0;
+  margin-bottom: 60px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -145,8 +179,15 @@
 }
 
 /* Features */
+/* .features {
+  padding-top: 94px;
+  padding-bottom: 94px; */
+}
 .features .title {
   /* h3 */
+  margin-top: 0;
+  margin-bottom: 10px;
+
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -157,6 +198,8 @@
 }
 
 .features .text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -164,6 +207,9 @@
   
 /* Team*/
 .team .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -178,6 +224,10 @@
 
 /* Button */
 .button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px; 
+ 
   color: var(--white-color);
   background-color: var(--accent-color);
 
@@ -188,8 +238,7 @@
   letter-spacing: 0.06em;
 
   text-decoration: none;
-  font-size: 16px;
-  padding: 10px 32px;
+  text-align: center;
 }
 
 /* Portfolio */
@@ -214,7 +263,11 @@
   letter-spacing: 0.03em;
 }
 
-/* Filter items*/
+/* Filter*/
+.filter {
+  margin-bottom: 50px;
+}
+
 .filter-item {
   background-color: var(--secondary-background-color);
   color: var(--title-text-color);
