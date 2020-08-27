@@ -18,11 +18,13 @@
 }
 
 .container {
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
 
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
 }
 .list {
   padding: 0;
@@ -40,6 +42,9 @@
   text-decoration: none;
 }
 
+.logo {
+  margin-right: 93px;
+}
 /* .logo {
   font-family: Raleway;
   font-style: normal;
@@ -72,10 +77,37 @@
 } */
 
 
-/* Header
-.page-header {
+/* Header */
+.header {
+  padding-top: 25px;
+  padding-bottom: 25px;
   outline: 1px solid tomato;
-} */
+}
+
+.header>.container {
+  display: flex;
+  justify-content: flex-end;
+
+  align-items: center;
+}
+
+.header-item {
+  margin-right: 50px;
+}
+
+/* ПОЧЕМУ НЕ РАБОТАЕТ??? */
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav {
+  display: flex;
+  margin-right: auto;
+}
+
+.header-contacts {
+  display: flex;
+}
 
 .site-nav .link {
   color: var(--title-text-color);
@@ -96,19 +128,28 @@
 }
 
 .header-contacts .link {
-  color: var(--title-text-color);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  color: var(--primary-text-color);
 }
 
 .site-nav .link:hover,
 .header-contacts .link:hover,
 .site-nav .link:focus,
-.header-contacts .link:focus {
+.header-contacts .link:focus,
+.address-item.link:hover,
+.address-item.link:focus {
   color: var(--accent-color);
 }
 
 /* Footer */
 .footer {
   background-color: var(--footer-color);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .address-item {
@@ -124,11 +165,6 @@
   font-style: normal;
   color: var(--primary-text-color);
 } 
-
-.address-item.link:hover,
-.address-item.link:focus {
-  color: var(--accent-color);
-}
 
 /* Hero */
 .hero {
